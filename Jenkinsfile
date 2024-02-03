@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
     environment {
@@ -39,13 +38,9 @@ pipeline {
             steps {
                 script {
                     // Exécutez le conteneur Docker en utilisant l'image construite
-                    bat "docker run -d -p 8084:80 --name frontend_container_${BUILD_ID} olfasalem/front-ang-image:${BUILD_ID}"
+                    bat "docker run -d -p 8333:80 --name frontend_container_${BUILD_ID} olfasalem/front-ang-image:${BUILD_ID}"
                 }
             }
         }
     }
 }
-
-
-
-
