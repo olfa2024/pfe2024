@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Construisez l'image Docker
-                    bat "docker build -t front-ang-image:${BUILD_ID} pfedevops/"
+                    bat "docker build -t front-ang-image:${BUILD_ID} ."
                     bat "docker tag front-ang-image:${BUILD_ID} olfasalem/front-ang-image:${BUILD_ID}"
                 }
             }
