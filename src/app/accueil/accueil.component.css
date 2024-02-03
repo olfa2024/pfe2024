@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('src/assets/1.png');
+    /* Add the path to your image */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Use vh (viewport height) instead of 1000vh */
+}
+
+div {
+    /* Add any styling for your content container */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Adjust as needed */
+}

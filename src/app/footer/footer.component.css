@@ -1,0 +1,63 @@
+/* footer.component.css */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+}
+
+/* Ajoutez les icônes appropriées pour les réseaux sociaux */
+.icon-facebook::before {
+    content: 'F';
+}
+
+.icon-twitter::before {
+    content: 'T';
+}
+
+.icon-instagram::before {
+    content: 'I';
+}
