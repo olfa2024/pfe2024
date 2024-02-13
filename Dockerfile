@@ -1,13 +1,17 @@
-# Stage 1: Build the Angular app
-FROM node:18 as build
+
+FROM node:latest
+
+# Set the working directory in the container
 WORKDIR /app
+
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-COPY . .
-RUN npm run build
+# Install dependencies
+RUN npm install
 
-# Stage 2: Serve the Angular app using Nginx
-FROM nginx:alpine
-COPY --from=build /app/dist/pfedevops /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Copy the rest of the application
+COPY . .
+
+# Build the Angular app
+RUN npm run build
